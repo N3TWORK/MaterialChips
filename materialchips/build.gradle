@@ -9,7 +9,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.12"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -30,4 +30,17 @@ dependencies {
 
     implementation 'com.android.support:appcompat-v7:26.0.2'
     testImplementation 'junit:junit:4.12'
+
+    testCompile 'junit:junit:4.12'
+
+    // recycler
+    compile 'com.android.support:recyclerview-v7:26.0.2'
+    compile 'com.beloo.widget:ChipsLayoutManager:0.3.7@aar'
+
+    // circle image view
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+
+    // butterknife
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }
