@@ -46,7 +46,7 @@ public class FilterableListView extends RelativeLayout {
         View view = inflate(getContext(), R.layout.list_filterable_view, this);
 
         // getting views
-        mRecyclerView = view.findViewById(R.id.recycler_view);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
 
         // recycler
         mRecyclerView.setLayoutManager(new LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
